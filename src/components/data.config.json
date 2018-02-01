@@ -1,0 +1,76 @@
+{
+  "priceRange":
+    { "a": [
+            {
+                "id": "01",
+                "name": "Sax & Fön",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.salongweb.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "recenssion_numbers": 32,
+                "recenssion_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "02",
+                "name": "Hårizont",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.salongweb.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "recenssion_numbers": 32,
+                "recenssion_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "03",
+                "name": "Hårhuset",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.salongweb.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "recenssion_numbers": 32,
+                "recenssion_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "04",
+                "name": "Hair & Nu",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.salongweb.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "recenssion_numbers": 32,
+                "recenssion_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "05",
+                "name": "Hårley Davidson",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.salongweb.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "recenssion_numbers": 32,
+                "recenssion_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            }
+      		]
+		}
+}
