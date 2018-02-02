@@ -10,29 +10,25 @@ class Lists extends Component {
     showList: false
   };
 
-  __getSalons = (range) => {
+  _getSalons = (range) => {
     const fetchedSalons = api.salonsWithinPriceRange(range);
     const salons = [...fetchedSalons];
     this.setState({salons});
   }
 
-  __toggleList = (e) => {
+  _toggleList = (e) => {
     this.setState({showList: !this.state.showList})
   }
 
   render(){
-    const {salons, showList} = this.state;
+    const {showList} = this.state;
     return (
       <div>
         <ListHeader />
-        <PriceMenu toggleList={this.__toggleList} getSalons={this.__getSalons} />
-        { showList ? <ListItem {...this.state}/> : null }
+        <PriceMenu toggleList={this._toggleList} getSalons={this._getSalons} />
+        { showList ? <ListItem {...this.state} {...this.props} /> : null }
       </div>
     );
   }
-
 }
-  
-  
-
 export default Lists;
