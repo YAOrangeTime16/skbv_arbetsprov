@@ -83,7 +83,7 @@ export const StyledListItem = styled.section`
   border-bottom: solid .5px #eeeeee;
   display: grid;
   grid-template-columns: 20% 45% 25% auto;
-  grid-template-rows: 6rem 1fr;
+  grid-template-rows: 6rem;
   font-size: ${fontSize};
   font-weight: 100;
 `;

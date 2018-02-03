@@ -10,8 +10,9 @@ const fontSize = "1.5em";
 /** Salon Header */
 export const SalonImage = styled.div`
   background-image: url(${img});
+  background-size: cover;
   background-color: #666666;
-  height: 14rem;
+  height: 15rem;
 `;
 
 export const ButtonAlign = styled.div`
