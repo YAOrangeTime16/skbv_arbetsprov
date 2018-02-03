@@ -7,32 +7,31 @@ import * as api from '../api';
 class Lists extends Component {
   state = {
     salons: [],
-    showList: false
+    showListA: false,
+    showListB: false
   };
 
-  __getSalons = (range) => {
+  _getSalons = (range) => {
     const fetchedSalons = api.salonsWithinPriceRange(range);
     const salons = [...fetchedSalons];
     this.setState({salons});
   }
 
-  __toggleList = (e) => {
-    this.setState({showList: !this.state.showList})
+  _toggleList = (e) => {
+    this.setState({showListA: !this.state.showListA})
   }
 
   render(){
-    const {salons, showList} = this.state;
+    const {showListA, showListB} = this.state;
     return (
       <div>
         <ListHeader />
-        <PriceMenu toggleList={this.__toggleList} getSalons={this.__getSalons} />
-        { showList ? <ListItem {...this.state}/> : null }
+        <PriceMenu toggleList={this._toggleList} getSalons={this._getSalons} priceClass="a" priceRange="250 - 500"/>
+        { showListA ? <ListItem {...this.state} {...this.props} /> : null }
+        <PriceMenu  toggleList={this._toggleList} getSalons={this._getSalons} priceClass="b" priceRange="500 - 700"/>
+        { showListB ? <ListItem {...this.state} {...this.props} styleProp="b" /> : null }
       </div>
     );
   }
-
 }
-  
-  
-
 export default Lists;

@@ -1,15 +1,16 @@
 import React from 'react';
-import BackButton from '../Parts/BackButton';
-import InfoHeader from './InfoHeader';
-import InfoItem from './InfoItem';
+import SalonHeader from './SalonHeader';
+import SalonMenu from './SalonMenu';
+import InfoItems from './InfoItems';
+import {Background} from './styles';
 
 const SalonInfo = (props) =>{
   return (
-      <div>
-        <InfoHeader />
-        <BackButton />
-        <InfoItem />
-      </div>
+      <Background>
+        <SalonHeader {...props}/>
+        <SalonMenu />
+        <InfoItems {...props}/>
+      </Background>
     );
 };
 

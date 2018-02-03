@@ -1,17 +1,25 @@
 import React from 'react';
+import {
+  PriceListWrapper, 
+  PriceListItemMenu1, 
+  PriceListItemMenu2} from './styles';
+import {IconArrowDown} from '../assets/icons';
 
-const PriceMenu = ({toggleList, getSalons}) => {
+const PriceMenu = ({toggleList, getSalons, priceClass, priceRange, styleProp}) => {
   return (
-      <div 
+      <PriceListWrapper
         onClick={()=>{
           toggleList();
-          getSalons('a');
-        }}
+          getSalons(priceClass)}}
       >
-        Price 250 - 500 kr
-      </div>
+        <PriceListItemMenu1>
+          <p>Pris {priceRange} kr</p>
+        </PriceListItemMenu1>
+        <PriceListItemMenu2>
+            <IconArrowDown stroke="#b69f58" rotate="270"/>
+        </PriceListItemMenu2>
+      </PriceListWrapper>
   );
 };
 
 export default PriceMenu;
-
