@@ -1,0 +1,108 @@
+import styled from 'styled-components';
+import img from '../assets/salon01.png';
+
+/** Default variables */
+const specialFont = `"MillerBanner", serif`;
+const paddingSide = "1rem";
+const themeColor = "#b69f58";
+const fontSize = "1.5em";
+
+/** Salon Header */
+export const SalonImage = styled.div`
+  background-image: url(${img});
+  background-color: #666666;
+  height: 14rem;
+`;
+
+export const ButtonAlign = styled.div`
+  display: grid;
+  grid-template-rows: 2.5rem;
+  grid-template-columns: 30% 55% 15%;
+  padding-top: 1.5rem;
+`;
+
+export const ArrowBack = styled.div`
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  padding-top: .7rem;
+  padding-left: ${paddingSide};
+`;
+
+export const Heart = styled.div`
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+`;
+
+export const SalonName = styled.p`
+  font-family: ${specialFont};
+  font-weight: 200;
+  font-size: 1.5rem;
+  padding-left: ${paddingSide};
+  margin-bottom: .3rem;
+`;
+
+export const TextBox = styled.div`
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) );
+  color: #ffffff;
+  height: 7rem;
+  padding-top: 4rem;
+`;
+
+export const StarAdjuster = styled.div`
+  padding-left: ${paddingSide};
+  padding-bottom: 1rem;
+  font-size: 1.3em;
+`;
+
+/** Salon Menu */
+export const Background = styled.div`
+background-color: #eeeeee;
+`;
+export const Menu = styled.section`
+  display: grid;
+  grid-template-rows: 2rem;
+  grid-template-columns: auto;
+  text-align: center;
+  padding-top: .8rem;
+  font-size: ${fontSize};
+  background-color: #ffffff;
+`;
+
+export const MenuItem1 = styled.div`
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  border-bottom: ${props=>props.selected ? "solid 2px #b69f58" : 'none' };
+`;
+
+export const MenuItem2 = styled.div`
+grid-row: 1 / 2;
+grid-column: 2 / 3;
+border-bottom: ${props=>props.selected ? "solid 2px #b69f58" : 'none' }
+`;
+
+/** Salon Info Items */
+export const SalonWrapper = styled.section`
+  display: grid;
+  grid-template-rows: 3rem;
+  padding: 1rem 0;
+  line-height: 3rem;
+  background-color: #ffffff;
+  font-size: ${fontSize};
+`;
+export const SalonInfoItem = styled.div`
+display: grid;
+grid-template-rows: 3rem;
+grid-template-columns: 2.5rem 11rem 1fr;
+border-bottom: solid .5px #eeeeee;
+margin: 0 1rem;
+`;
+
+export const ImageAdjuster = styled.div`
+  margin-top: .4rem;
+`;
+
+export const Description = styled.article`
+  line-height: 1.2rem;
+  font-size: .9rem;
+  padding: 1rem ${paddingSide};
+`;
