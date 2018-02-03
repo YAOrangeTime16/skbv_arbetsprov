@@ -1,11 +1,14 @@
 import React from 'react';
 import Stars from '../Parts/Stars';
+import {ArrowFoward} from '../assets/icons';
 import {
-  ListTitle, 
+  ListTitle,
+  SmallFont,
   StyledListItem,
   StyledItem1,
   StyledItem2,
   StyledItem3,
+  StyledItem4,
   Margin
 } from './styles';
 
@@ -18,13 +21,16 @@ const ListItem = ({salons, toggleInfo}) => {
         </StyledItem1>
         <StyledItem2>
           <ListTitle>{salon.name}</ListTitle>
-          <Stars reviews={salon.review_numbers}/>
+          <SmallFont><Stars reviews={salon.review_numbers}/></SmallFont>
           <Margin>{salon.address}</Margin>
         </StyledItem2>
         <StyledItem3>
           <div>{salon.price} kr</div>
-          <div>{salon.duration_time} min</div>
+          <SmallFont>{salon.duration_time} min</SmallFont>
         </StyledItem3>
+        <StyledItem4>
+          <div><ArrowFoward /></div>
+        </StyledItem4>
       </StyledListItem>
       );
   });

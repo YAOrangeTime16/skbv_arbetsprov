@@ -5,15 +5,15 @@ import {
   PriceListItemMenu2} from './styles';
 import {IconArrowDown} from '../assets/icons';
 
-const PriceMenu = ({toggleList, getSalons}) => {
+const PriceMenu = ({toggleList, getSalons, priceClass, priceRange, styleProp}) => {
   return (
-      <PriceListWrapper>
-        <PriceListItemMenu1
-          onClick={()=>{
-            toggleList();
-            getSalons('a');
-          }}>
-          <p>Price 250 - 500 kr</p>
+      <PriceListWrapper
+        onClick={()=>{
+          toggleList();
+          getSalons(priceClass)}}
+      >
+        <PriceListItemMenu1>
+          <p>Pris {priceRange} kr</p>
         </PriceListItemMenu1>
         <PriceListItemMenu2>
             <IconArrowDown stroke="#b69f58" rotate="270"/>

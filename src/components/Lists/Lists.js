@@ -7,7 +7,8 @@ import * as api from '../api';
 class Lists extends Component {
   state = {
     salons: [],
-    showList: false
+    showListA: false,
+    showListB: false
   };
 
   _getSalons = (range) => {
@@ -17,16 +18,18 @@ class Lists extends Component {
   }
 
   _toggleList = (e) => {
-    this.setState({showList: !this.state.showList})
+    this.setState({showListA: !this.state.showListA})
   }
 
   render(){
-    const {showList} = this.state;
+    const {showListA, showListB} = this.state;
     return (
       <div>
         <ListHeader />
-        <PriceMenu toggleList={this._toggleList} getSalons={this._getSalons} />
-        { showList ? <ListItem {...this.state} {...this.props} /> : null }
+        <PriceMenu toggleList={this._toggleList} getSalons={this._getSalons} priceClass="a" priceRange="250 - 500"/>
+        { showListA ? <ListItem {...this.state} {...this.props} /> : null }
+        <PriceMenu  toggleList={this._toggleList} getSalons={this._getSalons} priceClass="b" priceRange="500 - 700"/>
+        { showListB ? <ListItem {...this.state} {...this.props} styleProp="b" /> : null }
       </div>
     );
   }

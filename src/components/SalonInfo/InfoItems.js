@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  ArrowDown,
   IconClock,
   IconMapPointer,
   IconTelephone,
@@ -21,6 +22,7 @@ const InfoItems = ({salonInfo}) => {
           <IconClock />
         </ImageAdjuster>
         <div>Öppet till {salonInfo.open_time} idag</div>
+        <ImageAdjuster><ArrowDown /></ImageAdjuster>
       </SalonInfoItem>
       <SalonInfoItem>
         <ImageAdjuster>

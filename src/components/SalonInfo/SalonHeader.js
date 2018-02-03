@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Stars from '../Parts/Stars';
 import {IconArrow, IconHeart} from '../assets/icons';
-import {ArrowBack, ButtonAlign, Heart, StarAdjuster, SalonImage, SalonName, TextWhite} from './styles';
+import {ArrowBack, ButtonAlign, Heart, StarAdjuster, SalonImage, SalonName, TextBox} from './styles';
 
 class SalonHeader extends Component {
   state = {
@@ -20,14 +20,16 @@ class SalonHeader extends Component {
           <ArrowBack onClick={toggleInfo}>
             <IconArrow stroke="#ffffff" translate="-10, -31" rotate="0"/>
           </ArrowBack>
-          <Heart><IconHeart onClick={this._toggleLike} fill={this.state.like ? "#ffffff" : 'none'}/></Heart>
+          <Heart onClick={this._toggleLike}>
+            <IconHeart fill={this.state.like ? "#ffffff" : 'none'}/>
+          </Heart>
         </ButtonAlign>
-        <TextWhite>
+        <TextBox>
           <SalonName>{salonInfo.name}</SalonName>
           <StarAdjuster>
             <Stars reviews={salonInfo.review_numbers}/>
           </StarAdjuster>
-        </TextWhite>
+        </TextBox>
       </SalonImage>
     );
   };

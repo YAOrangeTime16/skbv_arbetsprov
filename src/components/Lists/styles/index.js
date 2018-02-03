@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
+/** Default values */
 const specialFont = "MillerBanner";
 const paddingSide = "1rem";
+const fontSize = "1.4em";
 
 export const Margin = styled.div`
-  margin: .5rem 0;
+  margin: .4rem 0;
 `;
 
 /** List Header */
 export const HeaderText = styled.h1`
   font-family: ${specialFont};
-  font-size: 2.8em;
+  font-size: 2rem;
   font-weight: 100;
 `;
 
@@ -47,13 +49,13 @@ export const WrapperItem3 = styled.div`
 export const PriceListWrapper = HeaderWrapper.extend`
   grid-template-rows: 3rem;
   grid-template-columns: 45% 45% 10%;
-  margin-top: 0;
+  margin-top: .5rem;
   padding-bottom: .8rem;
 `;
 export const PriceListItemMenu1 = styled.div`
   grid-row: 1 / 2;
   grid-column: 1 / 3;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-left: ${paddingSide};
 `;
 
@@ -64,13 +66,25 @@ export const PriceListItemMenu2 = styled.div`
 `;
 
 /** List Items */
-export const StyledListItem = styled.div`
+export const ListTitle = styled.div`
+  font-family: ${specialFont};
+  font-size: 1.5em;
+  padding-top: .2rem;
+  padding-bottom: .7rem;
+`;
+
+export const SmallFont = styled.div`
+  font-size: .8rem;
+  padding-top: .3rem;
+`;
+
+export const StyledListItem = styled.section`
   margin: 1rem;
   border-bottom: solid .5px #eeeeee;
   display: grid;
-  grid-template-columns: 20% 50% 25% 5%;
+  grid-template-columns: 20% 45% 25% auto;
   grid-template-rows: 6rem 1fr;
-  font-size: 1.5em;
+  font-size: ${fontSize};
   font-weight: 100;
 `;
 
@@ -90,9 +104,10 @@ export const StyledItem3 = WrapperItem3.extend`
   text-align: right;
 `;
 
-export const ListTitle = styled.div`
-  font-family: ${specialFont};
-  font-size: 20px;
-  padding-top: .2rem;
-  padding-bottom: .5rem;
+export const StyledItem4 = styled.div`
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+  padding-top: 2rem;
+  padding-right: 0;
+  text-align: right;
 `;
