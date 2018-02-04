@@ -51,7 +51,7 @@ export const IconUrl = () => {
 <g>
  <title>Layer 1</title>
  <rect id="svg_1" width="30" height="30" fill="none"/>
- <circle stroke="#000000" id="svg_2" stroke-miterlimit="10" stroke-linecap="round" r="24" fill="none" cy="25" cx="25"/>
+ <circle stroke="#000000" id="svg_2" strokeMiterlimit="10" strokeLinecap="round" r="24" fill="none" cy="25" cx="25"/>
  <ellipse id="svg_3" strokeMiterlimit="10" strokeLinecap="round" stroke="#000000" ry="24" rx="12" fill="none" cy="25" cx="25"/>
  <path id="svg_4" strokeMiterlimit="10" stroke="#000000" fill="none" d="m6.365,40.438c4.401,-2.709 11.114,-4.438 18.635,-4.438c7.418,0 14.049,1.682 18.451,4.325"/>
  <path id="svg_5" strokeMiterlimit="10" stroke="#000000" fill="none" d="m43.635,9.563c-4.401,2.708 -11.114,4.437 -18.635,4.437c-7.417,0 -14.049,-1.682 -18.451,-4.325"/>
@@ -77,7 +77,7 @@ export const IconClock = () => {
 							<g id="Clip-2"></g>
 							<polygon id="Stroke-1" stroke="#202020" strokeWidth="0.5" mask="url(#mask-2)" points="-15.8035714 304.017857 385.982143 304.017857 385.982143 -410.625 -15.8035714 -410.625"></polygon>
 					</g>
-					<g id="Group-10" transform="translate(0.000000, 0.535714)" stroke="#202020" stroke-width="0.5">
+					<g id="Group-10" transform="translate(0.000000, 0.535714)" stroke="#202020" strokeWidth="0.5">
 						<path d="M6.69642857,0.803571429 C3.15107143,0.803571429 0.267857143,3.68571429 0.267857143,7.23214286 C0.267857143,10.7775 3.15107143,13.6607143 6.69642857,13.6607143 C10.2417857,13.6607143 13.125,10.7775 13.125,7.23214286 C13.125,3.68571429 10.2417857,0.803571429 6.69642857,0.803571429" id="Stroke-4"></path>
 						<path d="M6.69642857,7.23214286 L6.69642857,3.14357143" id="Stroke-6" strokeLinecap="round"></path>
 						<path d="M9.27289286,9.80817857 L6.69610714,7.23246429" id="Stroke-8" strokeLinecap="round"></path>
@@ -90,16 +90,14 @@ export const IconClock = () => {
 
 export const IconHeart = (props) => {
 	return (
-		<svg width="80px" height="35px" viewBox="0 0 80 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
-			<defs>
-				<path id="iconheart" d="M341.640789,31 C343.075637,31 344.513002,31.5755607 345.62415,32.7384226 L347.61583,34.8262629 C347.827997,35.0504493 348.181887,35.0602329 348.406073,34.8480666 C348.413621,34.8410782 348.421168,34.8335308 348.428156,34.8262629 L350.411171,32.7557537 C352.633468,30.43003 356.146932,30.43003 358.369228,32.7557537 C360.591524,35.0817571 360.591524,38.8336639 358.369228,41.1593877 C354.91782,44.7712479 351.468929,48.3881398 348.017521,52 L337.666093,41.1507221 C335.445474,38.822203 335.443797,35.0641464 337.666093,32.7384226 C338.777241,31.5755607 340.20594,31 341.640789,31 Z"></path>
-			</defs>
-			<g id="Salon-IconHeart" stroke="none" strokeWidth="1" fill="none" fill-rule="evenodd" transform="translate(-321.000000, -30.000000)">
-				<g id="Page-1-Copy">
-					<use fill={props.fill} stroke="#FFFFFF" strokeWidth="1" xlinkHref="#iconheart"></use>
-				</g>
-			</g>
-		</svg>
+		<svg width="35" height="30" transform="translate(10, 3) scale(.8, .8)" xmlns="http://www.w3.org/2000/svg" clipRule="evenodd">
+      <g>
+        <rect fill="none" id="canvas_background" height="32" width="37" y="-1" x="-1"/>
+      </g>
+      <g>
+        <path stroke="#ffffff" fill={props.fill} stroke-linejoin="round" id="Layer_x0020_1" d="m29.770574,2.461885c-4.059143,-2.961431 -11.181791,-1.258608 -12.407193,5.034433c-1.225402,-6.293041 -8.34805,-7.995864 -12.407193,-5.034433c-3.293267,2.369145 -4.212319,6.959363 -3.369855,10.142901c2.297628,8.810257 14.857997,16.065764 15.777048,16.584014c0.919051,-0.51825 13.47942,-7.773757 15.777048,-16.584014c0.842464,-3.183538 -0.076588,-7.773757 -3.369855,-10.142901z" class="fil0 str0"/>
+      </g>
+    </svg>
 	);
 };
 
@@ -128,7 +126,7 @@ export const ArrowFoward = () => {
 			<g>
 			<title>Layer 1</title>
 			<line stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_4" y2="10.461359" x2="14.362063" y1="2.068584" x1="5.969289" fill="none"/>
-			<line transform="rotate(90 9.929269790649416, 14.539193153381348) " stroke="#b69f58" stroke-linecap="null" stroke-linejoin="null" id="svg_7" y2="18.73558" x2="14.125657" y1="10.342806" x1="5.732883" fill="none"/>
+			<line transform="rotate(90 9.929269790649416, 14.539193153381348) " stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_7" y2="18.73558" x2="14.125657" y1="10.342806" x1="5.732883" fill="none"/>
 			</g>
 		</svg>
 	);
@@ -146,7 +144,7 @@ export const ArrowDown = () => {
 <g>
  <title>Layer 1</title>
  <line stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_4" y2="14.716672" x2="10.579563" y1="7.505929" x1="3.36882" fill="none"/>
- <line transform="rotate(90 13.357162475585938,11.111300468444826) " stroke="#b69f58" stroke-linecap="null" stroke-linejoin="null" id="svg_8" y2="14.716672" x2="16.962534" y1="7.505929" x1="9.751791" fill="none"/>
+ <line transform="rotate(90 13.357162475585938,11.111300468444826) " stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_8" y2="14.716672" x2="16.962534" y1="7.505929" x1="9.751791" fill="none"/>
 </g>
 </svg>
 	);
