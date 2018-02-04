@@ -26,6 +26,9 @@ export const SalonImage = styled.div`
   background-size: cover;
   background-color: #666666;
   height: 15rem;
+  @media all and (min-width: 768px){
+    height: 24rem;
+  }
 `;
 
 export const ButtonAlign = styled.div`
@@ -38,6 +41,8 @@ export const ButtonAlign = styled.div`
 export const Heart = styled.div`
   grid-row: 1 / 2;
   grid-column: 3 / 4;
+  text-align: right;
+  padding-right: ${paddingSide};
 `;
 
 export const SalonName = styled.p`
@@ -50,9 +55,13 @@ export const SalonName = styled.p`
 export const TextBox = styled.div`
 background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) );
   color: #ffffff;
-  height: 7rem;
+  height: 10rem;
   padding-top: 5rem;
-  padding-left: ${paddingSide};
+  padding-left: ${paddingSide};  
+  
+  @media all and (min-width: 768px){
+    padding-top: 14rem;
+  }
 `;
 
 export const StarAdjuster = styled.div`
