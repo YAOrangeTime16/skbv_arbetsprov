@@ -58,7 +58,7 @@ export const PriceListWrapper = HeaderWrapper.extend`
   grid-template-rows: 3rem;
   grid-template-columns: 45% 45% 10%;
   margin-top: .5rem;
-  padding-bottom: .8rem;
+  padding-bottom: .5rem;
 `;
 export const PriceListItemMenu1 = styled.div`
   grid-row: 1 / 2;
@@ -79,7 +79,6 @@ export const PriceListItemMenu2 = styled.div`
 export const ListTitle = styled.div`
   font-family: ${specialFont};
   font-size: 1.5em;
-  padding-top: .2rem;
   padding-bottom: .7rem;
 `;
 

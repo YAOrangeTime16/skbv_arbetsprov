@@ -114,7 +114,7 @@ export const IconArrow = (props) => {
 
 export const ArrowFoward = () => {
 	return(
-		<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+		<svg width="20" height="20" transform="scale(.8, .8)" xmlns="http://www.w3.org/2000/svg">
 			<g>
 			  <rect fill="none" id="canvas_background" height="22" width="22" y="0" x="0"/>
 			</g>
@@ -128,7 +128,7 @@ export const ArrowFoward = () => {
 
 export const ArrowDown = () => {
 	return (		
-    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+    <svg width="20" height="20" transform="scale(.7, .7)" xmlns="http://www.w3.org/2000/svg">
       <g>
         <rect fill="none" id="canvas_background" height="22" width="22" y="-1" x="-1"/>
       </g>
@@ -142,7 +142,7 @@ export const ArrowDown = () => {
 
 export const IconArrowDown = (props) => {
 	return (
-		<svg width="25px" height="27px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+		<svg width="25px" height="27px" transform="scale(.7, .7)" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 			<defs>
 				<polyline id="iconarrowdown" points="24.1432489 51.3847763 15 42.1432489 24.1432489 33"></polyline>
 			</defs>
