@@ -1,19 +1,29 @@
-# Salong-App : 
+# Salong-App
 
-### Ramverk
+### Installation
+```sh
+  git clone https://github.com/YAOrangeTime16/salong-app.git
+  git cd salong-app
+```
+```sh
+  npm install
+  npm start
+```
+or 
+   
+```sh
+  yarn
+  yarn start
+```
+
+### Library & packages
 * [React](https://reactjs.org/)
+* [Create-react-app](https://github.com/facebookincubator/create-react-app)
+* [Styled-components](https://www.styled-components.com/)
 
-### Paketet
-* [Create React App](https://github.com/facebookincubator/create-react-app)
-* [Styled-Components](https://www.styled-components.com/)
-
-### Verltyg
+### Other tools
 * [Sketch](https://www.sketchapp.com/)
 * [Zeplin](https://zeplin.io/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [IconFinder](https://www.iconfinder.com/)
 * [JSONLint](https://jsonlint.com/)
-
-    
-        
-Ikonerna har exporterats from Sketch som svg, men vissa ikoner var svåra att anpassas. Så jag har skapats några svg ikoner från "IconFiner".
