@@ -90,7 +90,7 @@ export const IconClock = () => {
 
 export const IconHeart = (props) => {
 	return (
-		<svg width="35" height="30" transform="translate(10, 3) scale(.8, .8)" xmlns="http://www.w3.org/2000/svg" clipRule="evenodd">
+		<svg width="35" height="30" transform="translate(0, 3) scale(.8, .8)" xmlns="http://www.w3.org/2000/svg" clipRule="evenodd">
       <g>
         <rect fill="none" id="canvas_background" height="32" width="37" y="-1" x="-1"/>
       </g>
@@ -120,33 +120,27 @@ export const ArrowFoward = () => {
 	return(
 		<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
 			<g>
-			<title>background</title>
-			<rect fill="none" id="canvas_background" height="22" width="22" y="0" x="0"/>
+			  <rect fill="none" id="canvas_background" height="22" width="22" y="0" x="0"/>
 			</g>
 			<g>
-			<title>Layer 1</title>
-			<line stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_4" y2="10.461359" x2="14.362063" y1="2.068584" x1="5.969289" fill="none"/>
-			<line transform="rotate(90 9.929269790649416, 14.539193153381348) " stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_7" y2="18.73558" x2="14.125657" y1="10.342806" x1="5.732883" fill="none"/>
+        <line stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_4" y2="10.461359" x2="14.362063" y1="2.068584" x1="5.969289" fill="none"/>
+        <line transform="rotate(90 9.929269790649416, 14.539193153381348) " stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_7" y2="18.73558" x2="14.125657" y1="10.342806" x1="5.732883" fill="none"/>
 			</g>
 		</svg>
 	);
 }
 
 export const ArrowDown = () => {
-	return (
-		
-<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-
-<g>
- <title>background</title>
- <rect fill="none" id="canvas_background" height="22" width="22" y="-1" x="-1"/>
-</g>
-<g>
- <title>Layer 1</title>
- <line stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_4" y2="14.716672" x2="10.579563" y1="7.505929" x1="3.36882" fill="none"/>
- <line transform="rotate(90 13.357162475585938,11.111300468444826) " stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_8" y2="14.716672" x2="16.962534" y1="7.505929" x1="9.751791" fill="none"/>
-</g>
-</svg>
+	return (		
+    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+      <g>
+        <rect fill="none" id="canvas_background" height="22" width="22" y="-1" x="-1"/>
+      </g>
+      <g>
+        <line stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_4" y2="14.716672" x2="10.579563" y1="7.505929" x1="3.36882" fill="none"/>
+        <line transform="rotate(90 13.357162475585938,11.111300468444826) " stroke="#b69f58" strokeLinecap="null" strokeLinejoin="null" id="svg_8" y2="14.716672" x2="16.962534" y1="7.505929" x1="9.751791" fill="none"/>
+      </g>
+    </svg>
 	);
 }
 
