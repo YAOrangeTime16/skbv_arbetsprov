@@ -1,0 +1,148 @@
+[
+    { "a": [
+            {
+                "id": "a01",
+                "name": "Sax & Fön",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.saxofon.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "review_numbers": 32,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "a02",
+                "name": "Hårizont",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.harisont.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "review_numbers": 72,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "a03",
+                "name": "Hårhuset",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.harhuset.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "review_numbers": 100,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "a04",
+                "name": "Hair & Nu",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.hairandnu.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "review_numbers": 12,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "a05",
+                "name": "Hårley Davidson",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.darleydavidson.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "320",
+                "duration_time": "30",
+                "review_numbers": 46,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            }
+      		]
+        },
+        { "b": [
+            {
+                "id": "b01",
+                "name": "Sax & Fön",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.saxofon.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "600",
+                "duration_time": "30",
+                "review_numbers": 32,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "b02",
+                "name": "Hårizont",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.harisont.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "550",
+                "duration_time": "30",
+                "review_numbers": 72,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "b03",
+                "name": "Hårhuset",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.harhuset.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "700",
+                "duration_time": "30",
+                "review_numbers": 100,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "b04",
+                "name": "Hair & Nu",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.hairandnu.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "550",
+                "duration_time": "30",
+                "review_numbers": 12,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            },
+            {
+                "id": "b05",
+                "name": "Hårley Davidson",
+                "address": "Rådmansgatan 46",
+                "tel": "08-522 389 20",
+                "url": "www.darleydavidson.se",
+                "open_time": "12:00",
+                "close_time": "19:00",
+                "price": "650",
+                "duration_time": "30",
+                "review_numbers": 46,
+                "review_stars": 4,
+                "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
+            }
+      		]
+        }
+]
