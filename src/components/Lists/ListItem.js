@@ -4,34 +4,34 @@ import {ArrowFoward} from '../assets/icons';
 import {
   ListTitle,
   SmallFont,
-  StyledListItem,
-  StyledItem1,
-  StyledItem2,
-  StyledItem3,
-  StyledItem4,
+  SalonListWrapper,
+  SalonItem1,
+  SalonItem2,
+  SalonItem3,
+  SalonItem4,
   Margin
 } from './styles';
 
-const ListItem = ({salons, toggleInfo}) => {
+const ListItem = ({salons, toggleInfo, b}) => {
   const list = salons.map( salon => {
     return (
-      <StyledListItem key={salon.id} onClick={()=>toggleInfo(salon)}>
-        <StyledItem1>
+      <SalonListWrapper key={salon.id} onClick={()=>toggleInfo(salon)}>
+        <SalonItem1 b>
           {salon.open_time}
-        </StyledItem1>
-        <StyledItem2>
+        </SalonItem1>
+        <SalonItem2 b>
           <ListTitle>{salon.name}</ListTitle>
           <SmallFont><Stars reviews={salon.review_numbers}/></SmallFont>
           <Margin>{salon.address}</Margin>
-        </StyledItem2>
-        <StyledItem3>
+        </SalonItem2>
+        <SalonItem3 b>
           <div>{salon.price} kr</div>
           <SmallFont>{salon.duration_time} min</SmallFont>
-        </StyledItem3>
-        <StyledItem4>
+        </SalonItem3>
+        <SalonItem4 b>
           <div><ArrowFoward /></div>
-        </StyledItem4>
-      </StyledListItem>
+        </SalonItem4>
+      </SalonListWrapper>
       );
   });
   return list;

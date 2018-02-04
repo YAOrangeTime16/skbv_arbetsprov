@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 import img from '../assets/salon01.png';
+/** Salon Info Page
+ *  - Default variables
+ *  - Header
+ *  - Menu
+ *  - List Items
+ */
 
 /** Default variables */
 const specialFont = `"MillerBanner", serif`;
@@ -7,11 +13,19 @@ const paddingSide = "1rem";
 const themeColor = "#b69f58";
 const fontSize = "1.5em";
 
-/** Salon Header */
+/** Header */
+export const ArrowBack = styled.div`
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  padding-top: .7rem;
+  padding-left: ${paddingSide};
+`;
+
 export const SalonImage = styled.div`
   background-image: url(${img});
+  background-size: cover;
   background-color: #666666;
-  height: 14rem;
+  height: 15rem;
 `;
 
 export const ButtonAlign = styled.div`
@@ -19,13 +33,6 @@ export const ButtonAlign = styled.div`
   grid-template-rows: 2.5rem;
   grid-template-columns: 30% 55% 15%;
   padding-top: 1.5rem;
-`;
-
-export const ArrowBack = styled.div`
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-  padding-top: .7rem;
-  padding-left: ${paddingSide};
 `;
 
 export const Heart = styled.div`
@@ -37,7 +44,6 @@ export const SalonName = styled.p`
   font-family: ${specialFont};
   font-weight: 200;
   font-size: 1.5rem;
-  padding-left: ${paddingSide};
   margin-bottom: .3rem;
 `;
 
@@ -45,16 +51,16 @@ export const TextBox = styled.div`
 background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) );
   color: #ffffff;
   height: 7rem;
-  padding-top: 4rem;
+  padding-top: 5rem;
+  padding-left: ${paddingSide};
 `;
 
 export const StarAdjuster = styled.div`
-  padding-left: ${paddingSide};
   padding-bottom: 1rem;
   font-size: 1.3em;
 `;
 
-/** Salon Menu */
+/** Menu */
 export const Background = styled.div`
 background-color: #eeeeee;
 `;
@@ -71,16 +77,17 @@ export const Menu = styled.section`
 export const MenuItem1 = styled.div`
   grid-row: 1 / 2;
   grid-column: 1 / 2;
-  border-bottom: ${props=>props.selected ? "solid 2px #b69f58" : 'none' };
-`;
+  border-bottom: ${props=>props.selected ? `solid 2px ${themeColor}` : 'none' };
+
+  `;
 
 export const MenuItem2 = styled.div`
 grid-row: 1 / 2;
 grid-column: 2 / 3;
-border-bottom: ${props=>props.selected ? "solid 2px #b69f58" : 'none' }
+border-bottom: ${props=>props.selected ? `solid 2px ${themeColor}` : 'none' }
 `;
 
-/** Salon Info Items */
+/** List Items */
 export const SalonWrapper = styled.section`
   display: grid;
   grid-template-rows: 3rem;

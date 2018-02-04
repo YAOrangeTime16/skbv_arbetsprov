@@ -17,8 +17,9 @@ class Lists extends Component {
     this.setState({salons});
   }
 
-  _toggleList = (e) => {
-    this.setState({showListA: !this.state.showListA})
+  _toggleList = (priceClass) => {
+    priceClass === 'a' && this.setState({showListA: !this.state.showListA});
+    priceClass === 'b' && this.setState({showListB: !this.state.showListB});
   }
 
   render(){
@@ -29,7 +30,7 @@ class Lists extends Component {
         <PriceMenu toggleList={this._toggleList} getSalons={this._getSalons} priceClass="a" priceRange="250 - 500"/>
         { showListA ? <ListItem {...this.state} {...this.props} /> : null }
         <PriceMenu  toggleList={this._toggleList} getSalons={this._getSalons} priceClass="b" priceRange="500 - 700"/>
-        { showListB ? <ListItem {...this.state} {...this.props} styleProp="b" /> : null }
+        { showListB ? <ListItem {...this.state} {...this.props} /> : null }
       </div>
     );
   }

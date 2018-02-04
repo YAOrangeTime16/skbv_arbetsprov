@@ -1,15 +1,23 @@
 import styled from 'styled-components';
 
+/** List Page
+ *  - Default values
+ *  - Header
+ *  - Price List
+ *  - List Items
+ */
+
 /** Default values */
-const specialFont = "MillerBanner";
+const fontSize = "1.5em";
 const paddingSide = "1rem";
-const fontSize = "1.4em";
+const specialFont = `"MillerBanner", serif`;
+const themeColor = "#b69f58";
 
 export const Margin = styled.div`
   margin: .4rem 0;
 `;
 
-/** List Header */
+/** Header */
 export const HeaderText = styled.h1`
   font-family: ${specialFont};
   font-size: 2rem;
@@ -20,7 +28,7 @@ export const HeaderWrapper = styled.div`
   display: grid;
   grid-template-columns: 30% 40% 30%;
   grid-template-rows: 4.5rem 1fr;
-  border-bottom: solid .5px #b69f58;
+  border-bottom: solid .5px ${themeColor};
   margin-top: 1rem;
 `;
 
@@ -45,7 +53,7 @@ export const WrapperItem3 = styled.div`
   padding-right: ${paddingSide};
 `;
 
-/** List Price Menu */
+/** Price List */
 export const PriceListWrapper = HeaderWrapper.extend`
   grid-template-rows: 3rem;
   grid-template-columns: 45% 45% 10%;
@@ -55,7 +63,7 @@ export const PriceListWrapper = HeaderWrapper.extend`
 export const PriceListItemMenu1 = styled.div`
   grid-row: 1 / 2;
   grid-column: 1 / 3;
-  font-size: 1rem;
+  font-size: ${fontSize};
   padding-left: ${paddingSide};
 `;
 
@@ -63,6 +71,8 @@ export const PriceListItemMenu2 = styled.div`
   grid-row: 1 / 2;
   grid-column: 3 / 4;
   padding-top: 1rem;
+  text-align: right;
+  padding-right: ${paddingSide};
 `;
 
 /** List Items */
@@ -78,33 +88,32 @@ export const SmallFont = styled.div`
   padding-top: .3rem;
 `;
 
-export const StyledListItem = styled.section`
+export const SalonListWrapper = styled.section`
   margin: 1rem;
   border-bottom: solid .5px #eeeeee;
   display: grid;
-  grid-template-columns: 20% 45% 25% auto;
-  grid-template-rows: 6rem 1fr;
+  grid-template-columns: 20% 50% 20% auto;
+  grid-template-rows: 6rem;
   font-size: ${fontSize};
-  font-weight: 100;
 `;
 
-export const StyledItem1 = WrapperItem1.extend`
+export const SalonItem1 = WrapperItem1.extend`
   padding-top: 1.5rem;
   padding-left: 0;
 `;
 
-export const StyledItem2 = WrapperItem2.extend`
+export const SalonItem2 = WrapperItem2.extend`
   padding-top: 0;
   text-align: left;
 `;
 
-export const StyledItem3 = WrapperItem3.extend`
+export const SalonItem3 = WrapperItem3.extend`
   padding-top: 1.5rem;
   padding-right: 0;
   text-align: right;
 `;
 
-export const StyledItem4 = styled.div`
+export const SalonItem4 = styled.div`
   grid-row: 1 / 2;
   grid-column: 4 / 5;
   padding-top: 2rem;
