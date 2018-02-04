@@ -22,6 +22,7 @@ export const HeaderText = styled.h1`
   font-family: ${specialFont};
   font-size: 2rem;
   font-weight: 100;
+  margin-top: 1rem;
 `;
 
 export const HeaderWrapper = styled.div`
@@ -93,7 +94,7 @@ export const SalonListWrapper = styled.section`
   display: grid;
   grid-template-columns: 20% 55% 15% auto;
   grid-template-rows: 6rem;
-  font-size: ${fontSize};
+  font-size: 1.45em;
 `;
 
 export const SalonItem1 = WrapperItem1.extend`

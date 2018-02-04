@@ -55,7 +55,7 @@ export const SalonName = styled.p`
 export const TextBox = styled.div`
 background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) );
   color: #ffffff;
-  height: 10rem;
+  height: 7rem;
   padding-top: 5rem;
   padding-left: ${paddingSide};  
   
