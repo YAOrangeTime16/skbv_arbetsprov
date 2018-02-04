@@ -91,7 +91,7 @@ export const SalonListWrapper = styled.section`
   margin: 1rem;
   border-bottom: solid .5px #eeeeee;
   display: grid;
-  grid-template-columns: 20% 50% 20% auto;
+  grid-template-columns: 20% 55% 15% auto;
   grid-template-rows: 6rem;
   font-size: ${fontSize};
 `;

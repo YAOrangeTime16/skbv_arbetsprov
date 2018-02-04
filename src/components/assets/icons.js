@@ -128,7 +128,7 @@ export const ArrowFoward = () => {
 
 export const ArrowDown = () => {
 	return (		
-    <svg width="20" height="20" transform="scale(.7, .7)" xmlns="http://www.w3.org/2000/svg">
+    <svg width="20" height="20" transform="scale(.8, .8)" xmlns="http://www.w3.org/2000/svg">
       <g>
         <rect fill="none" id="canvas_background" height="22" width="22" y="-1" x="-1"/>
       </g>
