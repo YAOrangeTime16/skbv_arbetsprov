@@ -32,3 +32,6 @@ or
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [IconFinder](https://www.iconfinder.com/)
 * [JSONLint](https://jsonlint.com/)
+
+### Original Design
+![Sketch Design](./ScreenShot/salong-app-sketch.png)
