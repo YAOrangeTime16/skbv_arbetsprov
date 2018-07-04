@@ -1,11 +1,11 @@
-# Salong-App
+# skbv_arbetsprov
      
 This application has been created with React.js and `create-react-app`.
      
 ### Installation
 ```sh
-  git clone https://github.com/YAOrangeTime16/salong-app.git
-  cd salong-app
+  git clone https://github.com/YAOrangeTime16/skbv_arbetsprov.git
+  cd skbv_arbetsprov
 ```
 then
      
@@ -35,3 +35,4 @@ or
 
 ### Original Design
 ![Sketch Design](./ScreenShot/salong-app-sketch.png)
+=======
