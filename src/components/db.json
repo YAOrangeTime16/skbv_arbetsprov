@@ -1,8 +1,9 @@
 [
-    { "priceRank1": [
+    { "priceRankA": [
             {
                 "id": "a01",
                 "name": "Sax & Fön",
+                "urlName": "saxofon",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.saxofon.se",
@@ -12,12 +13,13 @@
                 "duration_time": "30",
                 "review_numbers": 32,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
                 "id": "a02",
                 "name": "Hårizont",
+                "urlName": "harisont",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.harisont.se",
@@ -27,12 +29,13 @@
                 "duration_time": "30",
                 "review_numbers": 72,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
                 "id": "a03",
                 "name": "Hårhuset",
+                "urlName": "harhuset",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.harhuset.se",
@@ -42,12 +45,13 @@
                 "duration_time": "30",
                 "review_numbers": 100,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
                 "id": "a04",
                 "name": "Hair & Nu",
+                "urlName": "hairandnu",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.hairandnu.se",
@@ -57,12 +61,13 @@
                 "duration_time": "30",
                 "review_numbers": 12,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
                 "id": "a05",
                 "name": "Hårley Davidson",
+                "urlName": "darleydavidson",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.darleydavidson.se",
@@ -72,15 +77,16 @@
                 "duration_time": "30",
                 "review_numbers": 46,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             }
       		]
         },
-        { "priceRank2": [
+        { "priceRankB": [
             {
                 "id": "b01",
                 "name": "Sax & Fön",
+                "urlName": "saxofon",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.saxofon.se",
@@ -90,12 +96,13 @@
                 "duration_time": "30",
                 "review_numbers": 32,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
                 "id": "b02",
                 "name": "Hårizont",
+                "urlName": "harisont",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.harisont.se",
@@ -105,11 +112,13 @@
                 "duration_time": "30",
                 "review_numbers": 72,
                 "review_stars": 4,
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
                 "id": "b03",
                 "name": "Hårhuset",
+                "urlName": "harhuset",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.harhuset.se",
@@ -119,12 +128,13 @@
                 "duration_time": "30",
                 "review_numbers": 100,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
                 "id": "b04",
                 "name": "Hair & Nu",
+                "urlName": "hairandnu",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.hairandnu.se",
@@ -134,12 +144,13 @@
                 "duration_time": "30",
                 "review_numbers": 12,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
                 "id": "b05",
                 "name": "Hårley Davidson",
+                "urlName": "darleydavidson",
                 "address": "Rådmansgatan 46",
                 "tel": "08-522 389 20",
                 "url": "www.darleydavidson.se",
@@ -149,7 +160,7 @@
                 "duration_time": "30",
                 "review_numbers": 46,
                 "review_stars": 4,
-                "background" : "./assets/salon01.png",
+                "background" : "/assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             }
       		]

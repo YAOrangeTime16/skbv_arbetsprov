@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
+import { Link } from 'react-router-dom';
 import Stars from '../Parts/Stars';
-import {IconArrow, IconHeart} from '../assets/icons';
-import {ArrowBack, ButtonAlign, Heart, StarAdjuster, SalonImage, SalonName, TextBox} from './styles';
+import { IconArrow, IconHeart } from '../assets/icons';
+import {
+  ArrowBack,
+  ButtonAlign,
+  Heart,
+  StarAdjuster,
+  SalonImage,
+  SalonName,
+  TextBox
+} from './styles';
 
 class SalonHeader extends Component {
   state = {
@@ -16,13 +25,15 @@ class SalonHeader extends Component {
   };
 
   render(){
-    const {salonInfo, toggleInfo} = this.props;
+    const {salonInfo} = this.props;
     return (
       <SalonImage img={salonInfo.background}>
         <ButtonAlign>
-          <ArrowBack onClick={toggleInfo}>
+          <Link to="/list">
+          <ArrowBack>
             <IconArrow stroke="#ffffff" translate="-10, -31" rotate="0"/>
           </ArrowBack>
+          </Link>
           <Heart onClick={this._toggleLike}>
             <IconHeart fill={this.state.like ? "#ffffff" : 'none'}/>
           </Heart>
