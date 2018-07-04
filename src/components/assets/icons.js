@@ -47,12 +47,12 @@ export const IconUrl = () => {
     </g>
     <g>
       <rect stroke="null" x="5.109587" y="4.9951" id="svg_1" width="15.154122" height="14.939476" fill="none"/>
-      <circle stroke-width="0.5" stroke="#202020" id="svg_2" strokeMiterlimit="10" strokeLinecap="round" r="7.170949" fill="none" cy="12.464838" cx="12.686648"/>
-      <ellipse stroke-width="0.5" stroke="#202020" id="svg_3" strokeMiterlimit="10" strokeLinecap="round" ry="7.170948" rx="3.636989" fill="none" cy="12.464838" cx="12.686648"/>
-      <path stroke-width="0.5" stroke="#202020" id="svg_4" strokeMiterlimit="10" fill="none" d="m7.038707,17.077551c1.333866,-0.809421 3.368458,-1.326028 5.647941,-1.326028c2.248266,0 4.258005,0.502564 5.592174,1.292265"/>
-      <path stroke-width="0.5" stroke="#202020" id="svg_5" strokeMiterlimit="10" fill="none" d="m18.33459,7.852425c-1.333866,0.809122 -3.368458,1.325729 -5.647941,1.325729c-2.247963,0 -4.258005,-0.502564 -5.592174,-1.292265"/>
-      <line stroke-width="0.5" stroke="#202020" id="svg_6" y2="12.464838" y1="12.464838" x2="19.960627" x1="5.41267" strokeMiterlimit="10" fill="none"/>
-      <line stroke-width="0.5" stroke="#202020" id="svg_7" y2="19.635787" y1="5.29389" x2="12.686648" x1="12.686648" strokeMiterlimit="10" fill="none"/>
+      <circle strokeWidth="0.5" stroke="#202020" id="svg_2" strokeMiterlimit="10" strokeLinecap="round" r="7.170949" fill="none" cy="12.464838" cx="12.686648"/>
+      <ellipse strokeWidth="0.5" stroke="#202020" id="svg_3" strokeMiterlimit="10" strokeLinecap="round" ry="7.170948" rx="3.636989" fill="none" cy="12.464838" cx="12.686648"/>
+      <path strokeWidth="0.5" stroke="#202020" id="svg_4" strokeMiterlimit="10" fill="none" d="m7.038707,17.077551c1.333866,-0.809421 3.368458,-1.326028 5.647941,-1.326028c2.248266,0 4.258005,0.502564 5.592174,1.292265"/>
+      <path strokeWidth="0.5" stroke="#202020" id="svg_5" strokeMiterlimit="10" fill="none" d="m18.33459,7.852425c-1.333866,0.809122 -3.368458,1.325729 -5.647941,1.325729c-2.247963,0 -4.258005,-0.502564 -5.592174,-1.292265"/>
+      <line strokeWidth="0.5" stroke="#202020" id="svg_6" y2="12.464838" y1="12.464838" x2="19.960627" x1="5.41267" strokeMiterlimit="10" fill="none"/>
+      <line strokeWidth="0.5" stroke="#202020" id="svg_7" y2="19.635787" y1="5.29389" x2="12.686648" x1="12.686648" strokeMiterlimit="10" fill="none"/>
     </g>
   </svg>
 	);
@@ -91,7 +91,7 @@ export const IconHeart = (props) => {
         <rect fill="none" id="canvas_background" height="32" width="37" y="-1" x="-1"/>
       </g>
       <g>
-        <path stroke="#ffffff" fill={props.fill} strokeLinejoin="round" id="Layer_x0020_1" d="m29.770574,2.461885c-4.059143,-2.961431 -11.181791,-1.258608 -12.407193,5.034433c-1.225402,-6.293041 -8.34805,-7.995864 -12.407193,-5.034433c-3.293267,2.369145 -4.212319,6.959363 -3.369855,10.142901c2.297628,8.810257 14.857997,16.065764 15.777048,16.584014c0.919051,-0.51825 13.47942,-7.773757 15.777048,-16.584014c0.842464,-3.183538 -0.076588,-7.773757 -3.369855,-10.142901z" class="fil0 str0"/>
+        <path stroke="#ffffff" fill={props.fill} strokeLinejoin="round" id="Layer_x0020_1" d="m29.770574,2.461885c-4.059143,-2.961431 -11.181791,-1.258608 -12.407193,5.034433c-1.225402,-6.293041 -8.34805,-7.995864 -12.407193,-5.034433c-3.293267,2.369145 -4.212319,6.959363 -3.369855,10.142901c2.297628,8.810257 14.857997,16.065764 15.777048,16.584014c0.919051,-0.51825 13.47942,-7.773757 15.777048,-16.584014c0.842464,-3.183538 -0.076588,-7.773757 -3.369855,-10.142901z" className="fil0 str0"/>
       </g>
     </svg>
 	);

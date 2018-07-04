@@ -6,6 +6,7 @@
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router": "^4.3.1",
     "react-scripts": "1.1.0",
     "styled-components": "^3.1.5"
   },
@@ -17,5 +18,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://yaorangetime16.github.io/salong-app"
+  "homepage": "https://yaorangetime16.github.io/skbv_arbetsprov"
 }

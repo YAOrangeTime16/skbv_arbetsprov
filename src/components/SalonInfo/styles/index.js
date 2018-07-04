@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../assets/salon01.png';
+//import img from '../assets/salon01.png';
 /** Salon Info Page
  *  - Default variables
  *  - Header
@@ -22,7 +22,7 @@ export const ArrowBack = styled.div`
 `;
 
 export const SalonImage = styled.div`
-  background-image: url(${img});
+  background-image: url(${props=>props.img});
   background-size: cover;
   background-color: #666666;
   height: 15rem;

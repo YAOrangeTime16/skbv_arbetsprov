@@ -18,7 +18,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        { this.state.page ? <Lists {...this.state} toggleInfo={this._toggleInfo} /> : <SalonInfo {...this.state} toggleInfo={this._toggleInfo}/>}
+        { this.state.page 
+          ? <Lists {...this.state} toggleInfo={this._toggleInfo} />
+          : <SalonInfo {...this.state} toggleInfo={this._toggleInfo}/>}
       </div>
     );
   }

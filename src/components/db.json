@@ -1,5 +1,5 @@
 [
-    { "a": [
+    { "priceRank1": [
             {
                 "id": "a01",
                 "name": "Sax & Fön",
@@ -12,6 +12,7 @@
                 "duration_time": "30",
                 "review_numbers": 32,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
@@ -26,6 +27,7 @@
                 "duration_time": "30",
                 "review_numbers": 72,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
@@ -40,6 +42,7 @@
                 "duration_time": "30",
                 "review_numbers": 100,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
@@ -54,6 +57,7 @@
                 "duration_time": "30",
                 "review_numbers": 12,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
@@ -68,11 +72,12 @@
                 "duration_time": "30",
                 "review_numbers": 46,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             }
       		]
         },
-        { "b": [
+        { "priceRank2": [
             {
                 "id": "b01",
                 "name": "Sax & Fön",
@@ -85,6 +90,7 @@
                 "duration_time": "30",
                 "review_numbers": 32,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
@@ -113,6 +119,7 @@
                 "duration_time": "30",
                 "review_numbers": 100,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
@@ -127,6 +134,7 @@
                 "duration_time": "30",
                 "review_numbers": 12,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             },
             {
@@ -141,6 +149,7 @@
                 "duration_time": "30",
                 "review_numbers": 46,
                 "review_stars": 4,
+                "background" : "./assets/salon01.png",
                 "description": "Lorem ipsum dolor sit amet, vulputate nunc. Auctor viverra. Ridiculus feugiat nunc porttitor volut pat, acu quis torquent iaculis ultricies massa, duis nun quis que amet."
             }
       		]

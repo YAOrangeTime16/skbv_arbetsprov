@@ -9,13 +9,16 @@ class SalonHeader extends Component {
   };
 
   _toggleLike = () => {
-    this.setState({like: !this.state.like})
+    this.setState(prevState=>{
+      const newState = prevState.like ? false : true;
+      return { like: newState }
+    })
   };
 
   render(){
     const {salonInfo, toggleInfo} = this.props;
     return (
-      <SalonImage>
+      <SalonImage img={salonInfo.background}>
         <ButtonAlign>
           <ArrowBack onClick={toggleInfo}>
             <IconArrow stroke="#ffffff" translate="-10, -31" rotate="0"/>
