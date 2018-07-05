@@ -16,7 +16,7 @@ const SalonInfo = (props) =>{
           <InfoItems {...props}/>
         </Background>
     )
-  : <Redirect to="/list" />
+  : <Redirect to="/" />
   );
 };
 

@@ -29,7 +29,7 @@ class SalonHeader extends Component {
     return (
       <SalonImage img={salonInfo.background}>
         <ButtonAlign>
-          <Link to="/list">
+          <Link to="/">
           <ArrowBack>
             <IconArrow stroke="#ffffff" translate="-10, -31" rotate="0"/>
           </ArrowBack>

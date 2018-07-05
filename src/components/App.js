@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return(
       <div style={styles.app}>
-        <Route exact path="/list" render={()=><Lists sendSalonInfo={this._sendSalonInfo}/>}/>
+        <Route exact path="/" render={()=><Lists sendSalonInfo={this._sendSalonInfo}/>}/>
         <Route path="/salon/:salonName" render={()=><ImportedSalonInfo salonInfo={this.state.salonInfo}/>}/>
       </div>
     )
