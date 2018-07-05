@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 
 import ListItem from './ListItem';
 import ListHeader from './ListHeader';
@@ -41,7 +41,7 @@ class Lists extends Component {
   render(){
     const {showListA, showListB} = this.state;
     return (
-      <div>
+      <Fragment>
         <ListHeader />
         <PriceMenu
           toggleList={this._toggleList}
@@ -55,7 +55,7 @@ class Lists extends Component {
           priceClass="priceRankB"
           priceRange="500 - 700"/>
         { showListB ? <ListItem {...this.state} {...this.props} /> : null }
-      </div>
+      </Fragment>
     );
   }
 }
