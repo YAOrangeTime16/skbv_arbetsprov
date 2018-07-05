@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
-
+import './App.css';
 import { Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Lists from './Lists';
 import Loader from './Loader';
-
-const styles = {
-  app : {
-    fontFamily: "'MillerBanner', 'Helvetica Neue', 'Open Sans', Sans-serif, Arial",
-    fontSize: '62.5%',
-    fontWeight: 300,
-  }
-}
 
 const ImportedSalonInfo = Loadable({
   loader: () => import('./SalonInfo'),
@@ -30,7 +22,7 @@ class App extends Component {
 
   render() {
     return(
-      <div style={styles.app}>
+      <div className="App">
         <Route exact path="/" render={()=><Lists sendSalonInfo={this._sendSalonInfo}/>}/>
         <Route path="/salon/:salonName" render={()=><ImportedSalonInfo salonInfo={this.state.salonInfo}/>}/>
       </div>

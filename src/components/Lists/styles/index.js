@@ -30,7 +30,7 @@ export const HeaderWrapper = styled.div`
   grid-template-columns: 30% 40% 30%;
   grid-template-rows: 4.5rem 1fr;
   border-bottom: solid .5px ${themeColor};
-  margin-top: 1rem;
+  padding-top: 1rem;
 `;
 
 export const WrapperItem1 = styled.div`
@@ -60,6 +60,7 @@ export const PriceListWrapper = HeaderWrapper.extend`
   grid-template-columns: 45% 45% 10%;
   margin-top: .5rem;
   padding-bottom: .5rem;
+  padding-top: 0rem;
 `;
 export const PriceListItemMenu1 = styled.div`
   grid-row: 1 / 2;

@@ -26,7 +26,7 @@ export const SalonImage = styled.div`
   background-color: #666666;
   height: 16rem;
   @media all and (min-width: 768px){
-    height: 24rem;
+    height: 20rem;
   }
 `;
 
@@ -35,6 +35,9 @@ export const ButtonAlign = styled.div`
   grid-template-rows: 2.5rem;
   grid-template-columns: 30% 55% 15%;
   padding-top: 1.5rem;
+  @media all and (min-width: 768px){
+    padding-bottom: 2rem;
+  }
 `;
 
 export const Heart = styled.div`
@@ -57,10 +60,10 @@ background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) );
   color: #ffffff;
   height: 6rem;
   padding-top: 6rem;
-  padding-left: 1.5rem;  
+  padding-left: 1.5rem;
   
   @media all and (min-width: 768px){
-    padding-top: 14rem;
+    padding-top: 8rem;
   }
 `;
 
