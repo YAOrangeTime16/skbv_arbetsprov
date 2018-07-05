@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   ArrowDown,
   IconClock,
@@ -44,6 +45,10 @@ const InfoItems = ({salonInfo}) => {
         <Description>{salonInfo.description}</Description>
     </SalonWrapper>
   )
+}
+
+InfoItems.propTypes = {
+  salonInfo: PropTypes.object.isRequired
 }
 
 export default InfoItems;

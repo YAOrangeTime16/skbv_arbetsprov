@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom'
 import Stars from '../Parts/Stars';
 import { ArrowFoward } from '../svg/icons';
@@ -19,7 +20,8 @@ const styles = {
     color: '#000'
   }
 }
-const ListItem = ({salons, sendSalonInfo, b}) => {
+
+const ListItem = ({salons, sendSalonInfo}) => {
   const list = salons.map( salon => {
     return (
       <Fragment key={salon.id} >
@@ -48,4 +50,8 @@ const ListItem = ({salons, sendSalonInfo, b}) => {
   return list;
 };
 
+ListItem.propTypes = {
+  salons: PropTypes.array.isRequired,
+  sendSalonInfo: PropTypes.func.isRequired
+}
 export default ListItem;

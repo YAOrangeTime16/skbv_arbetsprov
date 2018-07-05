@@ -1,6 +1,7 @@
 # skbv_arbetsprov
      
 This application has been created with React.js and `create-react-app`.
+The app has been deployed at https://skbv-a03b9.firebaseapp.com/
      
 ### Installation
 ```sh
@@ -25,8 +26,9 @@ or
 * [create-react-app](https://github.com/facebookincubator/create-react-app)
 * [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 * [rect-loadable](https://github.com/jamiebuilds/react-loadable)
+* [prop-types](https://www.npmjs.com/package/prop-types)
 * [styled-components](https://www.styled-components.com/)
-* [gh-pages](https://www.npmjs.com/package/gh-pages)
+* [firebase Hosting](https://firebase.google.com/products/hosting/)
 
 ### Other tools
 * [Sketch](https://www.sketchapp.com/)

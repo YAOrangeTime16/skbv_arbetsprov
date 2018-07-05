@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase-tools": "^3.19.3",
-    "gh-pages": "^1.1.0",
+    "prop-types": "^15.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-loadable": "^5.4.0",
@@ -19,6 +19,5 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  },
-  "homepage": "https://yaorangetime16.github.io/skbv_arbetsprov/list"
+  }
 }

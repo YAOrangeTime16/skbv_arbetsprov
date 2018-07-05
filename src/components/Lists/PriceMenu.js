@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import {
   PriceListWrapper, 
   PriceListItemMenu1, 
@@ -23,5 +25,12 @@ const PriceMenu = ({toggleList, getSalons, priceClass, priceRange}) => {
       </PriceListWrapper>
   );
 };
+
+PriceMenu.propTypes = {
+  toggleList: PropTypes.func,
+  getSalons: PropTypes.func,
+  priceClass: PropTypes.string,
+  priceRange: PropTypes.string
+}
 
 export default PriceMenu;

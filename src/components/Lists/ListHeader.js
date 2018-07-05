@@ -7,7 +7,7 @@ import {
   WrapperItem2, 
   WrapperItem3 } from './styles';
 
-const ListHeader = (props) => {
+const ListHeader = () => {
   return (
     <HeaderWrapper>
       <WrapperItem1>

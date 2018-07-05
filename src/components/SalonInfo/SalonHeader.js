@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import Stars from '../Parts/Stars';
 import { IconArrow, IconHeart } from '../svg/icons';
@@ -47,6 +48,10 @@ class SalonHeader extends Component {
       </SalonImage>
     );
   };
+}
+
+SalonHeader.propTypes = {
+  salonInfo: PropTypes.object.isRequired
 }
 
 export default SalonHeader;
