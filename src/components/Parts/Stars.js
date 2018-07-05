@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconStar } from '../assets/icons';
+import { IconStar } from '../svg/icons';
 
 const Stars = ({reviews}) => {
   return (

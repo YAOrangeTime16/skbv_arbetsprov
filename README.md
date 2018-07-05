@@ -23,9 +23,10 @@ or
 ### Library & packages
 * [React](https://reactjs.org/)
 * [create-react-app](https://github.com/facebookincubator/create-react-app)
+* [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+* [rect-loadable](https://github.com/jamiebuilds/react-loadable)
 * [styled-components](https://www.styled-components.com/)
 * [gh-pages](https://www.npmjs.com/package/gh-pages)
-* [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 
 ### Other tools
 * [Sketch](https://www.sketchapp.com/)
@@ -36,4 +37,3 @@ or
 
 ### Original Design
 ![Sketch Design](./ScreenShot/salong-app-sketch.png)
-=======
