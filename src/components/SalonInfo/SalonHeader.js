@@ -6,7 +6,7 @@ import {
   ArrowBack,
   ButtonAlign,
   Heart,
-  StarAdjuster,
+  StarContainer,
   SalonImage,
   SalonName,
   TextBox
@@ -40,9 +40,9 @@ class SalonHeader extends Component {
         </ButtonAlign>
         <TextBox>
           <SalonName>{salonInfo.name}</SalonName>
-          <StarAdjuster>
+          <StarContainer>
             <Stars reviews={salonInfo.review_numbers}/>
-          </StarAdjuster>
+          </StarContainer>
         </TextBox>
       </SalonImage>
     );

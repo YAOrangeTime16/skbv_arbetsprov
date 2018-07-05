@@ -15,8 +15,20 @@ class SalonMenu extends Component {
     const schemaSelected = this.state.menuSelected==='schema' && true;
     return (
       <Menu>
-        <MenuItem1 selected={infoSelected} onClick={()=>this._selectedMenu('info')}>Info</MenuItem1>
-        <MenuItem2 selected={schemaSelected} onClick={()=>this._selectedMenu('schema')}>Schema</MenuItem2>
+        <MenuItem1
+          selected={infoSelected}
+          onClick={()=>this._selectedMenu('info')}
+          style={{cursor: 'pointer'}}
+        >
+          Info
+        </MenuItem1>
+        <MenuItem2 
+          selected={schemaSelected}
+          onClick={()=>this._selectedMenu('schema')}
+          style={{cursor: 'pointer'}}
+        >
+          Schema
+        </MenuItem2>
       </Menu>
     );
   }
