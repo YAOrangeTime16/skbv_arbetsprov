@@ -3,9 +3,9 @@
 The application has been deployed at https://skbv-a03b9.firebaseapp.com/     
 
 ## Technical highlight
-- This application has been created with React.js and `create-react-app`
+- This application has been created with React.js using `create-react-app`
      
-- This Single Page Application is using `React Router v4`. Router is useful when users use the back button of the browser, instead of the one on the application page. The page will behave as users expect thanks to Router.     
+- This Single Page Application uses `React Router v4`. Router is useful when users use the back button of the browser, instead of the one on the application page. The page will behave as users expect thanks to Router.     
       
 - The application imports a salon page component dynamically (with the help of `React-loadable`), so it reduces unecessary data-loading to mobile devices. As a result, it should enhance user experience of mobile devices.
       
