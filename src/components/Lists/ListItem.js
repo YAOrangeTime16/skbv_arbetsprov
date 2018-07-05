@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { NavLink } from 'react-router-dom'
 import Stars from '../Parts/Stars';
-import {ArrowFoward} from '../assets/icons';
+import { ArrowFoward } from '../svg/icons';
 import {
   ListTitle,
   SmallFont,
@@ -12,10 +13,18 @@ import {
   Margin
 } from './styles';
 
-const ListItem = ({salons, toggleInfo, b}) => {
+const styles = {
+  navlink : {
+    textDecoration: 'none',
+    color: '#000'
+  }
+}
+const ListItem = ({salons, sendSalonInfo, b}) => {
   const list = salons.map( salon => {
     return (
-      <SalonListWrapper key={salon.id} onClick={()=>toggleInfo(salon)}>
+      <Fragment key={salon.id} >
+      <NavLink to={`/salon/${salon.urlName}`} style={styles.navlink} >
+      <SalonListWrapper onClick={()=>sendSalonInfo(salon)}>
         <SalonItem1 b>
           {salon.open_time}
         </SalonItem1>
@@ -32,6 +41,8 @@ const ListItem = ({salons, toggleInfo, b}) => {
           <div><ArrowFoward /></div>
         </SalonItem4>
       </SalonListWrapper>
+      </NavLink>
+      </Fragment>
       );
   });
   return list;

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+
 import ListItem from './ListItem';
 import ListHeader from './ListHeader';
 import PriceMenu from './PriceMenu';
@@ -18,7 +19,7 @@ class Lists extends Component {
   }
 
   _toggleList = (priceClass) => {
-    if(priceClass === 'priceRank1') {
+    if(priceClass === 'priceRankA') {
       this.setState(prevState => {
         const newStateA = prevState.showListA ? false : true;
         return ({
@@ -26,7 +27,7 @@ class Lists extends Component {
           showListB: false
         })
       })
-    } else if (priceClass === 'priceRank2'){
+    } else if (priceClass === 'priceRankB'){
       this.setState(prevState=>{
         const newStateB = prevState.showListB ? false : true;
         return ({
@@ -35,8 +36,6 @@ class Lists extends Component {
         })
       })
     }
-    //priceClass === 'priceRank1' && this.setState(prevState=>({ showListA: prevState.showListA ? false : true }));
-    //priceClass === 'priceRank2' && this.setState(prevState=>({ showListB: prevState.showListB ? false : true }));
   }
 
   render(){
@@ -47,13 +46,13 @@ class Lists extends Component {
         <PriceMenu
           toggleList={this._toggleList}
           getSalons={this._getSalons}
-          priceClass="priceRank1"
+          priceClass="priceRankA"
           priceRange="250 - 500"/>
         { showListA ? <ListItem {...this.state} {...this.props} /> : null }
         <PriceMenu 
           toggleList={this._toggleList}
           getSalons={this._getSalons}
-          priceClass="priceRank2"
+          priceClass="priceRankB"
           priceRange="500 - 700"/>
         { showListB ? <ListItem {...this.state} {...this.props} /> : null }
       </div>
