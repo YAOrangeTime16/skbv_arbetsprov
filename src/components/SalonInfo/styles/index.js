@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-//import img from '../assets/salon01.png';
 /** Salon Info Page
  *  - Default variables
  *  - Header
@@ -25,7 +24,7 @@ export const SalonImage = styled.div`
   background-image: url(${props=>props.img});
   background-size: cover;
   background-color: #666666;
-  height: 15rem;
+  height: 16rem;
   @media all and (min-width: 768px){
     height: 24rem;
   }
@@ -43,6 +42,7 @@ export const Heart = styled.div`
   grid-column: 3 / 4;
   text-align: right;
   padding-right: ${paddingSide};
+  cursor: pointer;
 `;
 
 export const SalonName = styled.p`
@@ -55,16 +55,16 @@ export const SalonName = styled.p`
 export const TextBox = styled.div`
 background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) );
   color: #ffffff;
-  height: 7rem;
-  padding-top: 5rem;
-  padding-left: ${paddingSide};  
+  height: 6rem;
+  padding-top: 6rem;
+  padding-left: 1.5rem;  
   
   @media all and (min-width: 768px){
     padding-top: 14rem;
   }
 `;
 
-export const StarAdjuster = styled.div`
+export const StarContainer = styled.div`
   padding-bottom: 1rem;
   font-size: 1.3em;
 `;
@@ -87,13 +87,12 @@ export const MenuItem1 = styled.div`
   grid-row: 1 / 2;
   grid-column: 1 / 2;
   border-bottom: ${props=>props.selected ? `solid 2px ${themeColor}` : 'none' };
-
   `;
 
 export const MenuItem2 = styled.div`
-grid-row: 1 / 2;
-grid-column: 2 / 3;
-border-bottom: ${props=>props.selected ? `solid 2px ${themeColor}` : 'none' }
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  border-bottom: ${props=>props.selected ? `solid 2px ${themeColor}` : 'none' }
 `;
 
 /** List Items */

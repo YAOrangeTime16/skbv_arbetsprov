@@ -5,7 +5,7 @@ import {
   IconMapPointer,
   IconTelephone,
   IconUrl
-} from '../assets/icons';
+} from '../svg/icons';
 import {
   SalonWrapper,
   SalonInfoItem,

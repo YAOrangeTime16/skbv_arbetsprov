@@ -3,7 +3,7 @@ import {
   PriceListWrapper, 
   PriceListItemMenu1, 
   PriceListItemMenu2} from './styles';
-import {IconArrowDown} from '../assets/icons';
+import { IconArrowDown } from '../svg/icons';
 
 const PriceMenu = ({toggleList, getSalons, priceClass, priceRange}) => {
   return (
@@ -11,6 +11,7 @@ const PriceMenu = ({toggleList, getSalons, priceClass, priceRange}) => {
         onClick={()=>{
           toggleList(priceClass);
           getSalons(priceClass)}}
+        style={{cursor: 'pointer'}}
       >
           <PriceListItemMenu1>
             <p>Pris {priceRange} kr</p>
@@ -18,6 +19,7 @@ const PriceMenu = ({toggleList, getSalons, priceClass, priceRange}) => {
           <PriceListItemMenu2>
               <IconArrowDown stroke="#b69f58" rotate="270"/>
           </PriceListItemMenu2>
+          
       </PriceListWrapper>
   );
 };

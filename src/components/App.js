@@ -1,38 +1,38 @@
 import React, { Component } from 'react';
-import './App.css';
-import Lists from './Lists/Lists';
-import SalonInfo from './SalonInfo/SalonInfo';
-import {
-  Route,
-  Switch
-} from 'react-router-dom';
+
+import { Route } from 'react-router-dom';
+import Loadable from 'react-loadable';
+import Lists from './Lists';
+import Loader from './Loader';
+
+const styles = {
+  app : {
+    fontFamily: "'MillerBanner', 'Helvetica Neue', 'Open Sans', Sans-serif, Arial",
+    fontSize: '62.5%',
+    fontWeight: 300,
+  }
+}
+
+const ImportedSalonInfo = Loadable({
+  loader: () => import('./SalonInfo'),
+  loading: Loader
+});
+
 
 class App extends Component {
   state={
-    //page: true,
-    salonInfo: ''
+    salonInfo: null
   }
 
-  _sendSalonInfo = (info='') =>{
-    /*this.state.page 
-    ? this.setState({page: false, salonInfo: info}) 
-    : this.setState({page: true, salonInfo: ''});
-    */
+  _sendSalonInfo = (info=null) =>{
    this.setState({salonInfo: info})
   }
 
   render() {
-    /*return (
-      <div className="App">
-        { this.state.page 
-          ? <Lists {...this.state} toggleInfo={this._toggleInfo} />
-          : <SalonInfo {...this.state} toggleInfo={this._sendSalonInfo}/>}
-      </div>
-    );*/
     return(
-      <div className="App">
+      <div style={styles.app}>
         <Route exact path="/list" render={()=><Lists sendSalonInfo={this._sendSalonInfo}/>}/>
-        <Route path="/list/salon/:id" render={()=><SalonInfo salonInfo={this.state.salonInfo}/>}/>
+        <Route path="/salon/:salonName" render={()=><ImportedSalonInfo salonInfo={this.state.salonInfo}/>}/>
       </div>
     )
   }

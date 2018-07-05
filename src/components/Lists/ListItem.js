@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom'
 import Stars from '../Parts/Stars';
-import { ArrowFoward } from '../assets/icons';
+import { ArrowFoward } from '../svg/icons';
 import {
   ListTitle,
   SmallFont,
@@ -23,7 +23,7 @@ const ListItem = ({salons, sendSalonInfo, b}) => {
   const list = salons.map( salon => {
     return (
       <Fragment key={salon.id} >
-      <NavLink to={`/list/salon/${salon.urlName}`} style={styles.navlink} >
+      <NavLink to={`/salon/${salon.urlName}`} style={styles.navlink} >
       <SalonListWrapper onClick={()=>sendSalonInfo(salon)}>
         <SalonItem1 b>
           {salon.open_time}

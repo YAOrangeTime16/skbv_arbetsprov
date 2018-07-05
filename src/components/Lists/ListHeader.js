@@ -1,5 +1,5 @@
 import React from 'react';
-import {IconArrow, IconSetting} from '../assets/icons';
+import {IconArrow, IconSetting} from '../svg/icons';
 import { 
   HeaderText,
   HeaderWrapper, 
