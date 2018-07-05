@@ -10,6 +10,8 @@ The application imports a salon page component dynamically (with the help of `Re
      
 I personaly like this CSS-in-JS library, `styled-components`, because it allows me to use usual CSS syntax as well as Sass syntax. Anable to send properties makes it possible to change styles dynamically as well. It is also easy to use with React applications.
      
+Static data for this app is saved as a JSON file (`./src/components/db.json`).
+     
 ## Installation
 ```sh
   git clone https://github.com/YAOrangeTime16/skbv_arbetsprov.git
