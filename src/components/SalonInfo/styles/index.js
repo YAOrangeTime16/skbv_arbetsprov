@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-//import img from '../assets/salon01.png';
 /** Salon Info Page
  *  - Default variables
  *  - Header

@@ -3,7 +3,7 @@ import {
   PriceListWrapper, 
   PriceListItemMenu1, 
   PriceListItemMenu2} from './styles';
-import {IconArrowDown} from '../assets/icons';
+import { IconArrowDown } from '../svg/icons';
 
 const PriceMenu = ({toggleList, getSalons, priceClass, priceRange}) => {
   return (

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import Stars from '../Parts/Stars';
-import { IconArrow, IconHeart } from '../assets/icons';
+import { IconArrow, IconHeart } from '../svg/icons';
 import {
   ArrowBack,
   ButtonAlign,

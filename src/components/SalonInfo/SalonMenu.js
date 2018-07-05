@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
-import {Menu, MenuItem1, MenuItem2} from './styles';
+import {
+  Menu,
+  MenuItem1,
+  MenuItem2
+} from './styles';
 
 class SalonMenu extends Component {
   state={
