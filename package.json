@@ -19,5 +19,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://yaorangetime16.github.io/skbv_arbetsprov/"
+  "homepage": "https://yaorangetime16.github.io/skbv_arbetsprov/list"
 }
