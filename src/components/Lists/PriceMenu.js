@@ -18,6 +18,7 @@ const PriceMenu = ({toggleList, getSalons, priceClass, priceRange}) => {
           <PriceListItemMenu1>
             <p>Pris {priceRange} kr</p>
           </PriceListItemMenu1>
+          
           <PriceListItemMenu2>
               <IconArrowDown stroke="#b69f58" rotate="270"/>
           </PriceListItemMenu2>

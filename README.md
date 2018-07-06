@@ -7,7 +7,7 @@ The application has been deployed at https://skbv-a03b9.firebaseapp.com/
      
 - This Single Page Application uses `React Router v4`. Router is useful when users use the back button of the browser, instead of the one on the application page. The page will behave as users expect thanks to Router.     
       
-- The application imports a salon page component dynamically (with the help of `React-loadable`), so it reduces unecessary data-loading to mobile devices. As a result, it should enhance user experience of mobile devices.
+- The application imports a salon component dynamically (which is the second view) with the help of `React-loadable`, and it helps to reduce the initial loading-time and an unecessary data-loading to mobile devices. As a result, it should enhance user experience of mobile devices.
       
 - I personaly like this CSS-in-JS library, `styled-components`, because it allows me to use usual CSS syntax as well as Sass syntax. Able to send properties makes it possible to change styles dynamically as well. It is also easy to use with React applications.
      

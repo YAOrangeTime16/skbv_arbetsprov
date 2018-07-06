@@ -29,6 +29,7 @@ class SalonHeader extends Component {
     const {salonInfo} = this.props;
     return (
       <SalonImage img={salonInfo.background}>
+
         <ButtonAlign>
           <Link to="/">
           <ArrowBack>
@@ -39,12 +40,14 @@ class SalonHeader extends Component {
             <IconHeart fill={this.state.like ? "#ffffff" : 'none'}/>
           </Heart>
         </ButtonAlign>
+        
         <TextBox>
           <SalonName>{salonInfo.name}</SalonName>
           <StarContainer>
             <Stars reviews={salonInfo.review_numbers}/>
           </StarContainer>
         </TextBox>
+
       </SalonImage>
     );
   };

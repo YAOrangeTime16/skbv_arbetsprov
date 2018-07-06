@@ -17,12 +17,14 @@ import {
 const InfoItems = ({salonInfo}) => {
   return (
     <SalonWrapper>
+
         <SalonInfoItem>
             <ImageAdjuster>
               <IconMapPointer />
             </ImageAdjuster>
             <div>{salonInfo.address}</div>
         </SalonInfoItem>
+
         <SalonInfoItem>
             <ImageAdjuster>
               <IconClock />
@@ -30,19 +32,23 @@ const InfoItems = ({salonInfo}) => {
             <div>Öppet till {salonInfo.open_time} idag</div>
             <ImageAdjuster><ArrowDown /></ImageAdjuster>
         </SalonInfoItem>
+
         <SalonInfoItem>
             <ImageAdjuster>
               <IconTelephone />
             </ImageAdjuster>
             <div>{salonInfo.tel}</div>
         </SalonInfoItem>
+
         <SalonInfoItem>
             <ImageAdjuster>
               <IconUrl />
             </ImageAdjuster>
             <div>{salonInfo.url}</div>
         </SalonInfoItem>
+
         <Description>{salonInfo.description}</Description>
+        
     </SalonWrapper>
   )
 }

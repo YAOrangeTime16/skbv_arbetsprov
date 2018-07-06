@@ -7,10 +7,10 @@ import {
   ListTitle,
   SmallFont,
   SalonListWrapper,
-  SalonItem1,
-  SalonItem2,
-  SalonItem3,
-  SalonItem4,
+  SalonColumn1,
+  SalonColumn2,
+  SalonColumn3,
+  SalonColumn4,
   Margin
 } from './styles';
 
@@ -25,25 +25,30 @@ const ListItem = ({salons, sendSalonInfo}) => {
   const list = salons.map( salon => {
     return (
       <Fragment key={salon.id} >
-      <NavLink to={`/salon/${salon.urlName}`} style={styles.navlink} >
-      <SalonListWrapper onClick={()=>sendSalonInfo(salon)}>
-        <SalonItem1 b>
-          {salon.open_time}
-        </SalonItem1>
-        <SalonItem2 b>
-          <ListTitle>{salon.name}</ListTitle>
-          <SmallFont><Stars reviews={salon.review_numbers}/></SmallFont>
-          <Margin>{salon.address}</Margin>
-        </SalonItem2>
-        <SalonItem3 b>
-          <div>{salon.price} kr</div>
-          <SmallFont>{salon.duration_time} min</SmallFont>
-        </SalonItem3>
-        <SalonItem4 b>
-          <div><ArrowFoward /></div>
-        </SalonItem4>
-      </SalonListWrapper>
-      </NavLink>
+        <NavLink to={`/salon/${salon.urlName}`} style={styles.navlink} >
+          <SalonListWrapper onClick={()=>sendSalonInfo(salon)}>
+
+            <SalonColumn1>
+              {salon.open_time}
+            </SalonColumn1>
+
+            <SalonColumn2>
+              <ListTitle>{salon.name}</ListTitle>
+              <SmallFont><Stars reviews={salon.review_numbers}/></SmallFont>
+              <Margin>{salon.address}</Margin>
+            </SalonColumn2>
+
+            <SalonColumn3>
+              <div>{salon.price} kr</div>
+              <SmallFont>{salon.duration_time} min</SmallFont>
+            </SalonColumn3>
+
+            <SalonColumn4>
+              <div><ArrowFoward /></div>
+            </SalonColumn4>
+            
+          </SalonListWrapper>
+        </NavLink>
       </Fragment>
       );
   });

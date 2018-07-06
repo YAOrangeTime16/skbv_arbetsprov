@@ -3,22 +3,26 @@ import {IconArrow, IconSetting} from '../svg/icons';
 import { 
   HeaderText,
   HeaderWrapper, 
-  WrapperItem1, 
-  WrapperItem2, 
-  WrapperItem3 } from './styles';
+  Column1, 
+  Column2, 
+  Column3 } from './styles';
 
 const ListHeader = () => {
   return (
     <HeaderWrapper>
-      <WrapperItem1>
+
+      <Column1>
         <IconArrow stroke="#b69f58" translate="-10, -31" rotate="0"/>
-      </WrapperItem1>
-      <WrapperItem2>
+      </Column1>
+
+      <Column2>
         <HeaderText>Hår</HeaderText>
-      </WrapperItem2>
-      <WrapperItem3>
+      </Column2>
+
+      <Column3>
         <IconSetting />
-      </WrapperItem3>
+      </Column3>
+      
     </HeaderWrapper>
   )
 }

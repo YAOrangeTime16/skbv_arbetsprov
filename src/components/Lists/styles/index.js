@@ -33,20 +33,20 @@ export const HeaderWrapper = styled.div`
   padding-top: 1rem;
 `;
 
-export const WrapperItem1 = styled.div`
+export const Column1 = styled.div`
   grid-row: 1 / 2;
   grid-column: 1 / 2;
   padding-top: 1.5rem;
   padding-left: ${paddingSide};
 `;
 
-export const WrapperItem2 = styled.div`
+export const Column2 = styled.div`
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   text-align: center;
 `;
 
-export const WrapperItem3 = styled.div`
+export const Column3 = styled.div`
   grid-row: 1 / 2;
   grid-column: 3 / 4;
   text-align: right;
@@ -98,23 +98,23 @@ export const SalonListWrapper = styled.section`
   font-size: 1.45em;
 `;
 
-export const SalonItem1 = WrapperItem1.extend`
+export const SalonColumn1 = Column1.extend`
   padding-top: 1.5rem;
   padding-left: 0;
 `;
 
-export const SalonItem2 = WrapperItem2.extend`
+export const SalonColumn2 = Column2.extend`
   padding-top: 0;
   text-align: left;
 `;
 
-export const SalonItem3 = WrapperItem3.extend`
+export const SalonColumn3 = Column3.extend`
   padding-top: 1.5rem;
   padding-right: 0;
   text-align: right;
 `;
 
-export const SalonItem4 = styled.div`
+export const SalonColumn4 = styled.div`
   grid-row: 1 / 2;
   grid-column: 4 / 5;
   padding-top: 2rem;
