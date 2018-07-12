@@ -22,14 +22,12 @@ class SalonMenu extends Component {
         <MenuItem1
           selected={infoSelected}
           onClick={()=>this._selectedMenu('info')}
-          style={{cursor: 'pointer'}}
         >
           Info
         </MenuItem1>
         <MenuItem2 
           selected={schemaSelected}
           onClick={()=>this._selectedMenu('schema')}
-          style={{cursor: 'pointer'}}
         >
           Schema
         </MenuItem2>

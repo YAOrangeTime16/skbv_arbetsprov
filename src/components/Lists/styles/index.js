@@ -10,7 +10,6 @@ import styled from 'styled-components';
 /** Default values */
 const fontSize = "1.5em";
 const paddingSide = "1rem";
-const specialFont = `"MillerBanner", serif`;
 const themeColor = "#b69f58";
 
 export const Margin = styled.div`
@@ -19,7 +18,6 @@ export const Margin = styled.div`
 
 /** Header */
 export const HeaderText = styled.h1`
-  font-family: ${specialFont};
   font-size: 2rem;
   font-weight: 100;
   margin-top: 1rem;
@@ -61,6 +59,9 @@ export const PriceListWrapper = HeaderWrapper.extend`
   margin-top: .5rem;
   padding-bottom: .5rem;
   padding-top: 0rem;
+  @media all and (min-width: 768px){
+    cursor: pointer;
+  }
 `;
 export const PriceListItemMenu1 = styled.div`
   grid-row: 1 / 2;
@@ -79,7 +80,6 @@ export const PriceListItemMenu2 = styled.div`
 
 /** List Items */
 export const ListTitle = styled.div`
-  font-family: ${specialFont};
   font-size: 1.5em;
   padding-bottom: .7rem;
 `;

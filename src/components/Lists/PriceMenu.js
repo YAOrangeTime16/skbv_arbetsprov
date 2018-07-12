@@ -13,7 +13,6 @@ const PriceMenu = ({toggleList, getSalons, priceClass, priceRange}) => {
         onClick={()=>{
           toggleList(priceClass);
           getSalons(priceClass)}}
-        style={{cursor: 'pointer'}}
       >
           <PriceListItemMenu1>
             <p>Pris {priceRange} kr</p>

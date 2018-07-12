@@ -7,7 +7,6 @@ import styled from 'styled-components';
  */
 
 /** Default variables */
-const specialFont = `"MillerBanner", serif`;
 const paddingSide = "1rem";
 const themeColor = "#b69f58";
 const fontSize = "1.5em";
@@ -45,11 +44,13 @@ export const Heart = styled.div`
   grid-column: 3 / 4;
   text-align: right;
   padding-right: ${paddingSide};
-  cursor: pointer;
+  @media all and (min-width: 768px){
+    padding-bottom: 2rem;
+    cursor: pointer;
+  }
 `;
 
 export const SalonName = styled.p`
-  font-family: ${specialFont};
   font-weight: 200;
   font-size: 1.5rem;
   margin-bottom: .3rem;
@@ -90,12 +91,18 @@ export const MenuItem1 = styled.div`
   grid-row: 1 / 2;
   grid-column: 1 / 2;
   border-bottom: ${props=>props.selected ? `solid 2px ${themeColor}` : 'none' };
-  `;
+  @media all and (min-width: 768px){
+    cursor: pointer;
+  }  
+`;
 
 export const MenuItem2 = styled.div`
   grid-row: 1 / 2;
   grid-column: 2 / 3;
-  border-bottom: ${props=>props.selected ? `solid 2px ${themeColor}` : 'none' }
+  border-bottom: ${props=>props.selected ? `solid 2px ${themeColor}` : 'none' };
+  @media all and (min-width: 768px){
+    cursor: pointer;
+  }
 `;
 
 /** List Items */
@@ -108,11 +115,11 @@ export const SalonWrapper = styled.section`
   font-size: ${fontSize};
 `;
 export const SalonInfoItem = styled.div`
-display: grid;
-grid-template-rows: 3rem;
-grid-template-columns: 2.5rem 11rem 1fr;
-border-bottom: solid .5px #eeeeee;
-margin: 0 1rem;
+  display: grid;
+  grid-template-rows: 3rem;
+  grid-template-columns: 2.5rem 11rem 1fr;
+  border-bottom: solid .5px #eeeeee;
+  margin: 0 1rem;
 `;
 
 export const ImageAdjuster = styled.div`
